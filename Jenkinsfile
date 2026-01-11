@@ -4,14 +4,14 @@ pipeline {
 
   environment {
     DOCKERHUB_CREDENTIALS = credentials('dockerhub')
-    IMAGE_NAME = "1ms24mc049/test"
+    IMAGE_NAME = "1ms24mc049/practice"
   }
 
   stages {
     stage('Checkout') {
       steps {
         git(
-          url: 'https://github.com/1ms24mc049/test.git',
+          url: 'https://github.com/1ms24mc049/practice.git',
           branch: 'master'
         )
       }
